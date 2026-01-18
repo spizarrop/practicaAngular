@@ -6,13 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./padre.component.css']
 })
 export class PadreComponent {
-  valorContador: number = 0;
+  nombrePadre = "Padre";
 
-  incrementar (){
-    this.valorContador++;
+  // Mensaje que recibimos del hijo
+  mensaje: string = '';
+
+  recibirMensaje(mensaje: string) {
+    this.mensaje = mensaje;
   }
 
+  valorContador: number = 0;
+  incrementar() {
+    this.valorContador++;
+  }
   decrementar() {
     this.valorContador--;
   }
+
 }

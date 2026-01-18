@@ -1,3 +1,13 @@
-<h1>{{ valorContador }}</h1>
-<button (click)="incrementar()">Incrementar</button>
-<button (click)="decrementar()">Decrementar</button>
+<p style="color: green; font-weight: bold;">Hola {{ nombre }}, soy el componente hijo</p>
+
+<!-- Enviar mensaje del input al padre -->
+<div>
+    <input [(ngModel)]="mensajeHijo">
+    <button (click)="enviarMensaje()">Enviar Mensaje al Padre</button>
+</div>
+<br/>
+<!-- Incrementar o decrementar contador del padre -->
+<div>
+    <button (click)="incrementar()">Incrementar</button>
+    <button (click)="decrementar()">Decrementar</button>
+</div>

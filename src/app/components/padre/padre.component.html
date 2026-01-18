@@ -1,3 +1,10 @@
-<h1>{{ valorContador }}</h1>
-<button (click)="incrementar()">Incrementar</button>
-<button (click)="decrementar()">Decrementar</button>
+<app-hijo 
+    [nombre]="nombrePadre" 
+    (mensajeEnviado)="recibirMensaje($event)"
+    (incrementarDesdeHijo)="incrementar()"
+    (decrementarDesdeHijo)="decrementar()"
+/>
+
+<p style="color: green; font-weight: bold;">Soy el componente Padre</p>
+<p>Mensaje recibido del hijo: {{ mensaje }}</p>
+<p>Contador: {{ valorContador }}</p>
