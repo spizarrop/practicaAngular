@@ -9,5 +9,5 @@ export class MiDirectivaDirective {
     this.element.nativeElement.style.color = 'green';
     this.element.nativeElement.style.fontWeight = 'bold';
   }
-
+  
 }
