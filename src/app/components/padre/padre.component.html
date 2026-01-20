@@ -5,6 +5,7 @@
     (decrementarDesdeHijo)="decrementar()"
 />
 
-<p style="color: green; font-weight: bold;">Soy el componente Padre</p>
-<p>Mensaje recibido del hijo: {{ mensaje }}</p>
+<p appMiDirectiva>Soy el componente Padre</p>
+<p>Fecha: {{ fecha | date: 'short' }}</p>
+<p>Mensaje recibido del hijo: {{ mensaje | miPipe }}</p>
 <p>Contador: {{ valorContador }}</p>

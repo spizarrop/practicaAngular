@@ -7,13 +7,17 @@ import { ProductoCardComponent } from './components/producto-card/producto-card.
 import { PadreComponent } from './components/padre/padre.component';
 import { HijoComponent } from './components/hijo/hijo.component';
 import { FormsModule } from '@angular/forms';
+import { MiDirectivaDirective } from './directives/mi-directiva.directive';
+import { MiPipePipe } from './pipes/mi-pipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductoCardComponent,
     PadreComponent,
-    HijoComponent
+    HijoComponent,
+    MiDirectivaDirective,
+    MiPipePipe
   ],
   imports: [
     BrowserModule,

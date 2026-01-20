@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./padre.component.css']
 })
 export class PadreComponent {
-  nombrePadre = "Padre";
+  nombrePadre: string = "Padre";
+  fecha: Date = new Date();
 
   // Mensaje que recibimos del hijo
   mensaje: string = '';
